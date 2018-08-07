@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/blaq0rkid/KurozatoView
+  revision: f707cb140e95980cde8a6341b1b59aa50ac46989
+  specs:
+    KurozatoView (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -188,6 +194,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  KurozatoView!
   bootstrap (~> 4.1.3)
   byebug
   coffee-rails (~> 4.2)

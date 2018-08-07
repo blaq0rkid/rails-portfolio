@@ -17,4 +17,8 @@ module ApplicationHelper
         end
     end
     
+    def copyright_generator
+        @copyright = KurozatoView::Renderer.copyright 'Kelley Crowell', 'All Rights Reserved'
+    end
+    
 end
