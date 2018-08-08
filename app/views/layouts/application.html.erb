@@ -8,16 +8,13 @@
     
     <meta name="keywords" content="<%= @seo_keywords%>" />
 
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <body class="text-center">
     
-    <%= render "shared/nav", location: "bottom" %>
+    <%= render "shared/application_nav" %>
    
     <%= login_helper%>
        
