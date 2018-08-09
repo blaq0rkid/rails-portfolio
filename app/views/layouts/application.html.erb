@@ -7,20 +7,30 @@
     <%= csrf_meta_tags %>
     
     <meta name="keywords" content="<%= @seo_keywords%>" />
+    
+    <link href="cover.css" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Kelley Crowell</h3>
     
-    <%= render "shared/application_nav" %>
-       
-    <%= yield %>
-    
-    <%= render "shared/application_footer" %>
-    
-    <%= source_helper("application")%>
+          <%= render "shared/application_nav" %>
+          
+      </div>
+    </header>
+             
+          <%= yield %>
+          
+          <%= render "shared/application_footer" %>
+          
+          <%= source_helper("application")%>
   
   </body>
 </html>
