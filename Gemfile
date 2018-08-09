@@ -61,4 +61,4 @@ gem 'jquery-rails'
 
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 
-gem 'KurozatoView', git: 'https://github.com/blaq0rkid/KurozatoView'
+gem 'KurozatoView'
