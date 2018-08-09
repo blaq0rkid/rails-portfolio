@@ -15,26 +15,18 @@
 
   <body>
     
-    <!--navigation-->
-    
+
     <%= render 'shared/portfolio_nav' %>
+   
+    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
     
-    <!--navigation-->
-    
-    <!--masthead-->
-    
-    <%= render 'shared/portfolio_masthead' %>
-    
-    <!--masthead-->
-       
+
     <%= yield %>
     
     
-    <!--footer-->
-    
+
     <%= render 'shared/portfolio_footer' %>
     
-    <!--footer-->
       <%= source_helper("application")%>
 
   </body>
