@@ -1,0 +1,12 @@
+<div>
+    <div class="container">
+        <nav>
+            <%= link_to "Home", root_path, class: 'nav_link' %>
+            <%= link_to "About", about_path, class: 'nav_link' %>
+            <%= link_to "Contact", contact_path, class: 'nav_link' %>
+            <%= link_to "Blog", blogs_path, class: 'nav_link' %>
+            <%= link_to "Portfolio", portfolios_path, class: 'nav_link' %>
+            <%= login_helper 'nav_link'%>
+        </nav>
+    </div>
+</div>
