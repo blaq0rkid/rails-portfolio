@@ -19,7 +19,15 @@
       <header class="masthead mb-auto">
         <h3 class="masthead-brand">Kelley Crowell</h3>
         
-        <div id="picture"></div>
+        <%= video_tag(
+            'Love-Coding.mp4',
+            id: 'picture',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'Love-Coding.jpg'
+          )
+        %>
         
         <%= render "shared/application_nav" %>
       </header>
