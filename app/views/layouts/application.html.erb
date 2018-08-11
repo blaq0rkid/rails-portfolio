@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%=  @page_title %></title>
+
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    
-    <meta name="keywords" content="<%= @seo_keywords%>" />
-    
-    <link href="cover.css" rel="stylesheet">
+
+    <meta name="keywords" content="<%= @seo_keywords %>" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <h3 class="masthead-brand">Kelley Crowell</h3>
-        
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          
         <%= video_tag(
             'Love-Coding.mp4',
             id: 'picture',
@@ -30,13 +29,17 @@
         %>
         
         <%= render "shared/application_nav" %>
-      </header>
 
           <%= yield %>
-          
+
           <%= render "shared/application_footer" %>
-          
-          <%= source_helper("application")%>
+
+          <%= alerts %>
+
+          <%= source_helper("application") %>
+
+        </div>
       </div>
+    </div>
   </body>
 </html>
