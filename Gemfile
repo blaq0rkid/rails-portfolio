@@ -57,8 +57,6 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 
 gem 'bootstrap', '~> 4.1.3'
 
-gem 'jquery-rails'
-
 gem 'petergate', '~> 1.8', '>= 1.8.1'
 
 gem 'KurozatoView'
@@ -75,4 +73,16 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
+gem 'carrierwave', '~> 1.0'
+
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
+
+gem 'gritter', '~> 1.2'
+gem 'twitter', '~> 6.1'
+gem 'redis', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.1'
+
+ruby "2.4.0"
+
+gem 'hirb'
