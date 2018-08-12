@@ -11,6 +11,6 @@ unless defined?(Spring)
   if spring = lockfile.specs.detect { |spec| spec.name == "spring" }
     Gem.use_paths Gem.dir, Bundler.bundle_path.to_s, *Gem.path
     gem 'spring', spring.version
-    'spring/binstub'
+    require 'spring/binstub'
   end
 end
