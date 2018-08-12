@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Kelley Crowell', 'All rights reserved'
+    KurozatoView::Renderer.copyright 'Kelley Crowell', 'All rights reserved'
   end
 
   def nav_items
@@ -27,7 +27,7 @@ module ApplicationHelper
         title: 'Home'
       },
       {
-        url: about_path,
+        url: about_me_path,
         title: 'About Me'
       },
       {
