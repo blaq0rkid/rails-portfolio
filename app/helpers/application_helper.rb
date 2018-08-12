@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Kelley Crowell', 'All rights reserved'
+    KurozatoView::Renderer.copyright 'Kelley Crowell', 'All rights reserved'
   end
 
   def nav_items
@@ -42,6 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
+      }
     ]
   end
 
