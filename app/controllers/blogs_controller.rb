@@ -1,4 +1,4 @@
-lass BlogsController < ApplicationController
+class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   before_action :set_sidebar_topics, except: [:update, :create, :destroy, :toggle_status]
   layout "blog"
@@ -98,3 +98,4 @@ lass BlogsController < ApplicationController
     def set_sidebar_topics
       @side_bar_topics = Topic.with_blogs
     end
+end
